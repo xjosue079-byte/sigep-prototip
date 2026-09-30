@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SIGEP | Iniciar Sesión</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+<main class="login">
+
+    <!-- PANEL IZQUIERDO -->
+    <section class="login-info">
+
+        <div class="info-content">
+
+            <!-- LOGO -->
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+
+                <div>
+                    <h1>SIGEP</h1>
+                    <p>Sistema de Gestión de Personal</p>
+                </div>
+            </div>
+
+
+            <!-- PRESENTACIÓN -->
+            <div class="presentation">
+
+                <h2>
+                    Tu equipo,
+                    <span>en buenas manos</span>
+                </h2>
+
+                <p class="description">
+                    Controla la asistencia, gestiona turnos
+                    y organiza tu personal de forma simple
+                    y eficiente.
+                </p>
+
+
+                <!-- BENEFICIOS -->
+                <div class="benefits">
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+
+                        <div>
+                            <h3>Personal organizado</h3>
+                            <p>Toda la información en un solo lugar</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+
+                        <div>
+                            <h3>Control de asistencia</h3>
+                            <p>Registra y supervisa en tiempo real</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-chart-column"></i>
+                        </div>
+
+                        <div>
+                            <h3>Mejores decisiones</h3>
+                            <p>Reportes claros y confiables</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FRASE -->
+            <div class="quote">
+
+                <p>
+                    “El trabajo en equipo<br>
+                    hace crecer tu empresa.”
+                </p>
+
+                <div class="quote-line"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PANEL DERECHO -->
+    <section class="login-access">
+
+        <div class="login-wrapper">
+
+            <div class="mobile-brand" aria-label="SIGEP - Sistema de Gestión de Personal">
+                <div class="mobile-brand-icon"><i class="fa-solid fa-users"></i></div>
+                <div>
+                    <strong>SIGEP</strong>
+                    <span>Sistema de Gestión de Personal</span>
+                </div>
+            </div>
+
+            <div class="login-card">
+
+                <header class="card-header">
+
+                    <h2>Iniciar Sesión</h2>
+
+                    <p>
+                        Ingresa tus credenciales para continuar
+                    </p>
+
+                </header>
+
+
+                <form id="loginForm">
+
+                    <!-- USUARIO -->
+                    <div class="input-group">
+
+                        <div class="input-box">
+
+                            <i class="fa-regular fa-user"></i>
+
+                            <input
+                                type="text"
+                                id="username"
+                                placeholder="Usuario"
+                                autocomplete="username"
+                            >
+
+                        </div>
+
+                        <small
+                            class="error-message"
+                            id="usernameError"
+                        ></small>
+
+                    </div>
+
+
+                    <!-- CONTRASEÑA -->
+                    <div class="input-group">
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Contraseña"
+                                autocomplete="current-password"
+                            >
+
+                            <button
+                                type="button"
+                                id="togglePassword"
+                                class="password-button"
+                            >
+                                <i class="fa-regular fa-eye-slash"></i>
+                            </button>
+
+                        </div>
+
+                        <small
+                            class="error-message"
+                            id="passwordError"
+                        ></small>
+
+                    </div>
+
+
+                    <!-- OPCIONES -->
+                    <div class="options">
+
+                        <label class="remember">
+
+                            <input
+                                type="checkbox"
+                                id="remember"
+                            >
+
+                            <span>
+                                Recordar sesión
+                            </span>
+
+                        </label>
+
+
+                        <button
+                            type="button"
+                            class="forgot"
+                            id="forgotPassword"
+                        >
+                            ¿Olvidaste tu contraseña?
+                        </button>
+
+                    </div>
+
+
+                    <!-- ERROR LOGIN -->
+                    <div
+                        class="login-error"
+                        id="loginError"
+                    >
+                        <i class="fa-solid fa-circle-exclamation"></i>
+
+                        <span>
+                            Usuario o contraseña incorrectos.
+                        </span>
+                    </div>
+
+
+                    <!-- BOTÓN -->
+                    <button
+                        type="submit"
+                        class="login-button"
+                        id="loginButton"
+                    >
+
+                        <span>Iniciar Sesión</span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <!-- ADMIN -->
+                    <div class="admin-message">
+
+                        <span></span>
+
+                        <p>
+                            <i class="fa-solid fa-lock"></i>
+                            Solo para administradores
+                        </p>
+
+                        <span></span>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+
+            <!-- COPYRIGHT -->
+            <footer>
+
+                © <span id="currentYear"></span>
+                SIGEP. Todos los derechos reservados.
+
+            </footer>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- RECUPERACIÓN DE CONTRASEÑA -->
+<div class="recovery-modal" id="recoveryModal" aria-hidden="true">
+    <div class="recovery-dialog" role="dialog" aria-modal="true" aria-labelledby="recoveryTitle">
+        <button type="button" class="recovery-close" id="recoveryClose" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+        <div class="recovery-icon"><i class="fa-solid fa-key"></i></div>
+        <h2 id="recoveryTitle">Recuperar contraseña</h2>
+        <p class="recovery-subtitle" id="recoverySubtitle">Ingresa el correo asociado a tu cuenta.</p>
+
+        <div class="recovery-step active" data-step="email">
+            <label for="recoveryEmail">Correo electrónico</label>
+            <div class="recovery-input"><i class="fa-regular fa-envelope"></i><input id="recoveryEmail" type="email" placeholder="admin@sigep.pe" autocomplete="email"></div>
+            <small class="recovery-error" id="recoveryEmailError"></small>
+            <button type="button" class="recovery-primary" id="sendRecoveryCode">Enviar código</button>
+        </div>
+
+        <div class="recovery-step" data-step="code">
+            <div class="demo-code" id="demoCodeBox">Modo demostración · Código: <strong id="demoCode"></strong></div>
+            <label for="recoveryCode">Código de 6 dígitos</label>
+            <input class="code-input" id="recoveryCode" inputmode="numeric" maxlength="6" placeholder="000000" autocomplete="one-time-code">
+            <small class="recovery-error" id="recoveryCodeError"></small>
+            <button type="button" class="recovery-primary" id="verifyRecoveryCode">Verificar código</button>
+            <button type="button" class="recovery-link" id="resendRecoveryCode">Reenviar código</button>
+        </div>
+
+        <div class="recovery-step" data-step="password">
+            <label for="newPassword">Nueva contraseña</label>
+            <input class="plain-recovery-input" id="newPassword" type="password" placeholder="Mínimo 8 caracteres">
+            <label for="confirmPassword">Confirmar contraseña</label>
+            <input class="plain-recovery-input" id="confirmPassword" type="password" placeholder="Repite la contraseña">
+            <div class="password-rules">Mínimo 8 caracteres, una mayúscula y un número.</div>
+            <small class="recovery-error" id="recoveryPasswordError"></small>
+            <button type="button" class="recovery-primary" id="saveNewPassword">Restablecer contraseña</button>
+        </div>
+
+        <div class="recovery-step recovery-success" data-step="success">
+            <div class="success-check"><i class="fa-solid fa-check"></i></div>
+            <h3>Contraseña actualizada</h3>
+            <p>Ya puedes iniciar sesión con tu nueva contraseña.</p>
+            <button type="button" class="recovery-primary" id="backToLogin">Volver al inicio de sesión</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/login.js"></script>
+
+</body>
+</html>
